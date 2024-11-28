@@ -61,6 +61,9 @@
 #  MATCH STATEMENT CONDITIONS
 
  
+
+
+
 #   FUNCTIONS 
 
 # def average(a,b):
@@ -76,9 +79,21 @@
 
 # average(5*6)  
 
-def names(**names):
-    print(names['fname'],names['mname'],names['lname'])
+# def names(**names):
+#     print(names['fname'],names['mname'],names['lname'])
 
-names(fname='Abdullah',mname='Abdul Vadud',lname='Ansari')
+# names(fname='Abdullah',mname='Abdul Vadud',lname='Ansari')
 
 #   FUNCTIONS
+
+
+
+
+
+
+#  LIST 
+
+list = [i for i in range(10) if i%2==0]
+print(list)
+
+#  LIST
