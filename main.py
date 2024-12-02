@@ -93,7 +93,39 @@
 
 #  LIST 
 
-list = [i for i in range(10) if i%2==0]
-print(list)
+# list = [i for i in range(10) if i%2==0]
+# print(list)
 
 #  LIST
+
+
+
+
+
+# LIST METHODS
+
+# l = [1,2,5,6,9,3]
+# l.sort()
+# l.index(2)
+# l.append(10)
+
+# print(l)
+
+
+# LIST METHODS    
+
+
+
+
+
+
+#  F STRING 
+
+name = 'Abdullah'
+country = 'India'
+
+txt = f"Hello! My name is {name} and I am from {country}."
+
+print(txt)
+
+#  F STRING
