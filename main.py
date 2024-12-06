@@ -121,11 +121,48 @@
 
 #  F STRING 
 
-name = 'Abdullah'
-country = 'India'
+# name = 'Abdullah'
+# country = 'India'
 
-txt = f"Hello! My name is {name} and I am from {country}."
+# txt = f"Hello! My name is {name} and I am from {country}."
 
-print(txt)
+# print(txt)
 
 #  F STRING
+
+
+
+
+
+#  Recursive 
+
+# def factorial(n):
+#     if(n==0 or n==1):
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+
+# print(factorial(7))
+
+#  Recursive 
+
+
+
+
+
+
+#  TRY AND EXCEPTION
+  
+a = input("Enter You Number: ")
+
+print(f"Multiplication of {a} is:")
+
+try:
+ for i in range(1,11):
+    print(f"{int(a)} X  {i} = {int(a) * i}")
+except Exception as e:
+    print(e)
+
+print('Error handle successfully!')
+
+#  TRY AND EXCEPTION  
