@@ -153,16 +153,61 @@
 
 #  TRY AND EXCEPTION
   
-a = input("Enter You Number: ")
+# a = input("Enter You Number: ")
 
-print(f"Multiplication of {a} is:")
+# print(f"Multiplication of {a} is:")
 
-try:
- for i in range(1,11):
-    print(f"{int(a)} X  {i} = {int(a) * i}")
-except Exception as e:
-    print(e)
+# try:
+#  for i in range(1,11):
+#     print(f"{int(a)} X  {i} = {int(a) * i}")
+# except Exception as e:
+#     print(e)
 
-print('Error handle successfully!')
+# print('Error handle successfully!')
 
 #  TRY AND EXCEPTION  
+
+
+
+
+
+
+
+
+# KBC EXERCISE 
+
+listOFQuestions = [
+    ['What is your Name','Abdullah','Ansari','Abdul Rehman','Amrin',1],
+    ['What is your favorite Color','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Place','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite T-shirt','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Pen','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Weather','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Design','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Logo','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Pet','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Exercise','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Time','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Cap','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+    ['What is your favorite Car','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+]
+
+amountPrice = [1000,2000,5000,6000,10000,30000,70000,100000,400000,10000000]
+
+for i in range(len(listOFQuestions)):
+    question = listOFQuestions[i]
+    print(f"\n\nThis Question for {amountPrice[i]}")
+    print(f"Question {1}: {question[0]}")
+    print(f" a. {question[1]}    b.{question[2]}")
+    print(f" c. {question[3]}    d.{question[4]}")
+
+    answer = int(input("Enter you answer :"))
+
+    if(answer == question[5]):
+        print(f"Correct your answer! You win {amountPrice[i]}")
+    else:
+        print('Your answer is wrong')
+        break
+     
+
+# KBC EXERCISE 
