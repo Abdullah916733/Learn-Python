@@ -176,38 +176,67 @@
 
 # KBC EXERCISE 
 
-listOFQuestions = [
-    ['What is your Name','Abdullah','Ansari','Abdul Rehman','Amrin',1],
-    ['What is your favorite Color','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Place','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite T-shirt','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Pen','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Weather','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Design','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Logo','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Pet','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Exercise','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Time','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Cap','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-    ['What is your favorite Car','Abdullah','Ansari','Abdul Rehman','Amrin',3],
-]
+# listOFQuestions = [
+#     ['What is your Name','Abdullah','Ansari','Abdul Rehman','Amrin',1],
+#     ['What is your favorite Color','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Place','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite T-shirt','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Pen','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Weather','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Design','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Logo','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Pet','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Exercise','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Time','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Cap','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+#     ['What is your favorite Car','Abdullah','Ansari','Abdul Rehman','Amrin',3],
+# ]
 
-amountPrice = [1000,2000,5000,6000,10000,30000,70000,100000,400000,10000000]
+# amountPrice = [1000,2000,5000,6000,10000,30000,70000,100000,400000,10000000]
 
-for i in range(len(listOFQuestions)):
-    question = listOFQuestions[i]
-    print(f"\n\nThis Question for {amountPrice[i]}")
-    print(f"Question {1}: {question[0]}")
-    print(f" a. {question[1]}    b.{question[2]}")
-    print(f" c. {question[3]}    d.{question[4]}")
+# for i in range(len(listOFQuestions)):
+#     question = listOFQuestions[i]
+#     print(f"\n\nThis Question for {amountPrice[i]}")
+#     print(f"Question {1}: {question[0]}")
+#     print(f" a. {question[1]}    b.{question[2]}")
+#     print(f" c. {question[3]}    d.{question[4]}")
 
-    answer = int(input("Enter you answer :"))
+#     answer = int(input("Enter you answer :"))
 
-    if(answer == question[5]):
-        print(f"Correct your answer! You win {amountPrice[i]}")
-    else:
-        print('Your answer is wrong')
-        break
+#     if(answer == question[5]):
+#         print(f"Correct your answer! You win {amountPrice[i]}")
+#     else:
+#         print('Your answer is wrong')
+#         break
      
 
 # KBC EXERCISE 
+
+
+
+
+
+
+
+
+
+# DECORATORS FUNCTION
+
+
+def greet(func):
+    def help():
+        print("Good morning!")
+        func()
+        print("Your function successfully run!")
+    return help
+
+
+@greet
+def hello():
+    print("Hello World!")
+
+
+hello()
+
+
+# DECORATORS FUNCTION
